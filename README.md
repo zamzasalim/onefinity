@@ -24,18 +24,22 @@ nano .env
 
 ## Install Modul
 ```
-sudo apt install unzip
-```
-**Unzip File Zip**
-```
-unzip node_modules.zip
-```
-```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
 ```
 sudo apt install nodejs npm
 ```
+```
+npm install
+```
+```
+npm install ethers@5.7.2
+```
+```
+npm audit fix
+```
+```
+
 ## RUN Bot
 **Create Screen**
 ```
