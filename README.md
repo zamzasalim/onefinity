@@ -39,6 +39,10 @@ npm audit fix
 ```
 npm list ethers
 ```
+**Uninstall ethers**
+```
+npm uninstall ethers
+```
 
 ## RUN Bot
 **Create Screen**
