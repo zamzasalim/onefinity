@@ -35,7 +35,10 @@ npm install ethers@5.7.2
 ```
 npm audit fix
 ```
-
+**Check ethers version**
+```
+npm list ethers
+```
 
 ## RUN Bot
 **Create Screen**
