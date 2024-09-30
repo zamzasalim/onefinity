@@ -39,7 +39,7 @@ npm audit fix
 ```
 npm list ethers
 ```
-**Uninstall ethers**
+**Error?? -> Uninstall ethers & Reinstall Modul**
 ```
 npm uninstall ethers
 ```
