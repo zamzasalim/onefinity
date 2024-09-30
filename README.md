@@ -35,7 +35,6 @@ sudo apt install nodejs
 ```
 sudo apt upgrade nodejs
 ```
-
 ## RUN Bot
 **Create Screen**
 ```
