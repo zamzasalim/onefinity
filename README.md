@@ -13,7 +13,7 @@
 git clone https://github.com/zamzasalim/onefinity.git
 ```
 
-## Paste PrivateKeys
+## Paste PrivateKeys | USE 2 WALLET
 ```
 cd /root/onefinity
 ```
