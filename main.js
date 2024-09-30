@@ -5,12 +5,10 @@ import chalk from 'chalk';
 
 dotenv.config();
 
-// Fungsi untuk membersihkan layar terminal
 const clearScreen = () => {
     process.stdout.write('\x1Bc');
 };
 
-// Fungsi untuk menampilkan banner
 const printBanner = () => {
     console.log(chalk.cyan('=============================================='));
     console.log(chalk.cyan('            ONE-FINITY | AIRDROP ASC            '));
@@ -21,7 +19,6 @@ const printBanner = () => {
     console.log(chalk.cyan('==============================================\n'));
 };
 
-// Cetak banner sekali saat memulai program
 printBanner();
 
 if (!process.env.PRIVATE_KEY_1 || !process.env.PRIVATE_KEY_2) {
@@ -57,7 +54,6 @@ if (!amount1Str || !amount2Str) {
 const amount1 = ethers.utils.parseUnits(amount1Str, 18);
 const amount2 = ethers.utils.parseUnits(amount2Str, 18);
 
-// Penghitung transaksi untuk Wallet 1 dan Wallet 2
 let wallet1Count = 0;
 let wallet2Count = 0;
 
@@ -74,7 +70,6 @@ async function sendONE(wallet, toAddress, amount, walletNumber) {
 
         const receipt = await transaction.wait();
 
-        // Periksa status transaksi untuk memastikan berhasil
         if (receipt && receipt.status === 1) {
             console.log(chalk.green(`Transaksi Wallet ${walletNumber} berhasil.`));
             // Tingkatkan penghitung transaksi setelah transaksi sukses
@@ -105,23 +100,18 @@ async function sendONE(wallet, toAddress, amount, walletNumber) {
 
 async function main() {
     while (true) {
-        // Wallet 1 transaksi
+
         await sendONE(wallet1, toAddress1, amount1, 1);
 
-        // Jeda sebelum transaksi Wallet 2
         await new Promise((resolve) => setTimeout(resolve, 3000));
 
-        // Wallet 2 transaksi
         await sendONE(wallet2, toAddress2, amount2, 2);
 
-        // Jeda sebelum layar dibersihkan
         await new Promise((resolve) => setTimeout(resolve, 3000));
 
-        // Bersihkan layar dan cetak ulang banner
         clearScreen();
         printBanner();
 
-        // Jeda sebelum memulai ulang loop
         await new Promise((resolve) => setTimeout(resolve, 3000));
     }
 }
