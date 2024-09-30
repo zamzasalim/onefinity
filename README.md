@@ -30,6 +30,11 @@ sudo apt install unzip
 ```
 unzip node_modules.zip
 ```
+```
+sudo apt install nodejs
+```
+sudo apt upgrade nodejs
+```
 
 ## RUN Bot
 **Create Screen**
