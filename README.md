@@ -33,7 +33,9 @@ unzip node_modules.zip
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
-
+```
+sudo apt install nodejs npm
+```
 ## RUN Bot
 **Create Screen**
 ```
