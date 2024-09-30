@@ -31,10 +31,7 @@ sudo apt install unzip
 unzip node_modules.zip
 ```
 ```
-sudo apt install nodejs
-```
-```
-sudo apt upgrade nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
 
 ## RUN Bot
