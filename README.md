@@ -45,9 +45,9 @@ npm start
 
 **Go back to Screen**
 ```
-Screen -r notpixel
+Screen -r one
 ```
 **Delete Screen**
 ```
-screen -S notpixel -X kill
+screen -S one -X kill
 ```
