@@ -22,7 +22,7 @@ nano .env
 ```
 **After Paste CTRL + XY**
 
-## Install Modul
+## Install Modul | Need ethers 5.7.2 - Don't use V6
 ```
 sudo apt install nodejs npm
 ```
