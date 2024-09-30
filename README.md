@@ -43,6 +43,9 @@ npm list ethers
 ```
 npm uninstall ethers
 ```
+```
+rm -rf node_modules package-lock.json
+```
 
 ## RUN Bot
 **Create Screen**
